@@ -2,7 +2,7 @@ class GitExplain < Formula
   desc "Understand why code changed, not just when — AI-powered git history explainer"
   homepage "https://github.com/myothuko98/git-explain"
   url "https://github.com/myothuko98/git-explain/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "fadbad0156a730c902be3f3fa14169050f6812756c88779dc6602316c53cff4e"
+  sha256 "95ac27f7981353941d188bbae4a1e104080a0a9a8ff55e47cb90150fa0f371a1"
   license "MIT"
   head "https://github.com/myothuko98/git-explain.git", branch: "main"
 
