@@ -6,13 +6,11 @@ class GitExplain < Formula
   license "MIT"
   head "https://github.com/myothuko98/git-explain.git", branch: "main"
 
-  bottle :unneeded
-
   depends_on "go" => :build
 
   def install
     ldflags = "-s -w -X main.version=#{version}"
-    system "go", "build", *std_go_args(ldflags:), "./cmd/git-explain"
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/git-explain"
   end
 
   def caveats
@@ -27,7 +25,6 @@ class GitExplain < Formula
   end
 
   test do
-    # Verify binary runs and version flag works
     assert_match version.to_s, shell_output("#{bin}/git-explain --version")
   end
 end
